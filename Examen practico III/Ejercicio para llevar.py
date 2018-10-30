@@ -125,7 +125,7 @@ def pop(front_helper,front,comp):
 					print("   No se pueden eliminar las raices")
 				else:
 					if comp == front_helper.data and comp != front.right.data:
-						front_helper_back.rigth = front_helper_front
+						front_helper_back.right = front_helper_front
 						front_helper_front.left = front_helper_front
 						front_helper.right = None
 						front_helper.left = None

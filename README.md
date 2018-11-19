@@ -1,6 +1,6 @@
 # Tareas-Estructura-De-Datos
 
-<"<Investigaciones>">
+Investigaciones:
 
     Investigacion_1: Clasificacion de las estructuras de datos
     Investigacion_2: Tipos de datos abstractos
@@ -22,7 +22,7 @@
     Investigacion_18: Métodos de ordenamiento externo
     Investigacion_19: Métodos de busqueda 
     
-<<Practicas>>
+Practicas:
 
     Practica_01: Recursividad: (desplegar primeros 100 numeros naturales)
     Practica_02: Recursividad: (factorial, ambos metodos)
@@ -60,3 +60,8 @@
     Practica_34: Métodos de ordenamiento externo: mezcla directa 
     Practica_35: Algoritmo de búsqueda: Búsqueda Binaria                    
     Practica_36: Algoritmo de búsqueda: Búsqueda Secuencial                 
+
+Examenes:
+
+    Examen practico II: Ejercicios para el examen de la unidad 2
+    Examen practico III: Ejercicios para el examen de la unidad 3

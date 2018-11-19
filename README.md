@@ -1,6 +1,6 @@
 # Tareas-Estructura-De-Datos
 
-<<Investigaciones>>
+<"<Investigaciones>">
 
     Investigacion_1: Clasificacion de las estructuras de datos
     Investigacion_2: Tipos de datos abstractos

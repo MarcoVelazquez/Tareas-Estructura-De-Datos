@@ -3,11 +3,13 @@
 import random
 
 def NewRandomArray(tam):
-	array = [17,41,5,22,54,6,29,3,13]
+	#array = [17,41,5,22,54,6,29,3,13]
+	
+	array = []
 
-	# for i in range(0,tam):
-	#
-	# 	array.insert(i,random.randint(0,tam))
+	for i in range(0,tam):
+	
+	 	array.insert(i,random.randint(0,tam))
 
 	return array
 

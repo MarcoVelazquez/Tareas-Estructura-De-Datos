@@ -221,34 +221,63 @@ def NewArray(i):
 
 def QuickSort(a,iz,de):
 
+	#Variables que toman los valores de la izquierda y derecha del arreglo
+
     i = iz
     j = de
 
+	#Se obtiene el pivote tomando el tamaño del arreglo, y diviendolo entre 2
+
     pivote = a[int((iz+de)/2)]
+
+	#Mientras "i" sea menor o igual a "j" se ejecutaran las siguientes líneas de codigo
 
     while i <= j:
 
+		#Mientras el dato del arreglo en la posición "i" sea menor al pivote, se ejecutaran las siguientes líneas de codigo
+
         while a[i] < pivote:
 
+			#Se aumenta el valor de "i" para poder tomar el siguiente dato del arreglo en la siguiente vuelta del arreglo
+
             i += 1
+
+		#Mientras el dato del arreglo en la posición "j" sea mayor al pivote, se ejecutaran las siguientes líneas de codigo
 
         while a[j] > pivote:
 
+			#Se disminuye el valor de "j" para poder tomar el siguiente dato del arreglo en la siguiente vuelta del arreglo
+
             j -= 1
+
+		#Si el valor de "i" es mayor o igual al valor de "j", se ejecutaran ls siguientes líneas de codigo
 
         if i <= j:
 
+			#Se toma el dato en la posición "i" del arreglo, y se guarda en la variable "auxi"
+
             auxi = a[i]
 
+			#El dato en la posición "i" del arreglo toma el dato en la posición "j" del arreglo
+
             a[i] = a[j]
+
+			#El dato en la posición "j" del arreglo toma el valor de "auxi"
+
             a[j] = auxi
+
+			#Se aumenta en 1 la variable "i", y se disminuye en 1 la variable "j"
 
             i += 1
             j -= 1
+
+	#Si el valor de "j" es mayor al valor de "iz", se vuelve a llamar el método 
 
     if j > iz:
 
         QuickSort(a,iz,j)
+
+	#Si el valor de "i" es menor al valor de "de", se vuelve a llamar el método 
 
     if i < de:
 
@@ -623,8 +652,9 @@ prom_B = datetime.now()
 prom_B = prom_B-prom_B
 
 for i in range(1,31):
+    	
 		print("-----------------------------------------------------------")
-		n = i
+		
 
 		#Prueba en QuickSort
 
@@ -664,8 +694,6 @@ for i in range(1,31):
 			#inicio
 
 		array = NewArray(i)
-
-
 
 		tiempo_inicial_Shell = datetime.now()
 
@@ -707,9 +735,7 @@ for i in range(1,31):
 			#Inicio
 
 		array = NewArray(i)
-
-
-
+	
 		tiempo_inicial_Bubble = datetime.now()
 
 		bubblesort(array)
